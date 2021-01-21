@@ -1,5 +1,6 @@
 package com.example.stu.modularization.activity
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -15,6 +16,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(getCustomLayoutId())
     }
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
@@ -44,5 +46,28 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
+    }
+
+    open fun getCustomLayoutId(): Int {
+        return getLayoutId()
+    }
+
+    fun Context.getLayoutId(pageName: String = javaClass.simpleName): Int {
+        var type = "Activity"
+        if (pageName.endsWith("Fragment")) {
+            type = "Fragment"
+        }
+        val name = pageName.substring(0, pageName.indexOf(type))
+        val chars = name.toCharArray()
+        val buf = StringBuffer()
+        buf.append(type.toLowerCase())
+        for (c: Char in chars) {
+            if (c in 'A'..'Z') {
+                buf.append("_" + c.toLowerCase())
+            } else {
+                buf.append(c)
+            }
+        }
+        return resources.getIdentifier(buf.toString(), "layout", packageName)
     }
 }
