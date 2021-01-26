@@ -1,3 +1,4 @@
+include ':imageloader'
 include ':http'
 include ':app'
 rootProject.name = "modularization"

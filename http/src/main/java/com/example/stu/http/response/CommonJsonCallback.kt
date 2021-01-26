@@ -106,7 +106,7 @@ class CommonJsonCallback:Callback {
 
     private fun handleResponse(responseObj: Any?) {
         if (responseObj == null || responseObj.toString().trim { it <= ' ' } == "") {
-            mListener!!.onFailure(OkHttpException(NETWORK_ERROR, EMPTY_MSG))
+            mListener?.onFailure(OkHttpException(NETWORK_ERROR, EMPTY_MSG))
             return
         }
         try {
@@ -115,7 +115,7 @@ class CommonJsonCallback:Callback {
              */
             val result = JSONObject(responseObj.toString())
             if (mClass == null) {
-                mListener!!.onSuccess(result)
+                mListener?.onSuccess(result)
             } else {
                   //stu:1.25日注释因为缺少ResonseEntityToModule
 //                val obj: Any = ResponseEntityToModule.parseJsonObjectToModule(result, mClass)
