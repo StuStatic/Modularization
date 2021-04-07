@@ -1,0 +1,14 @@
+static def convertVersionCode() {
+    return Integer.valueOf(new Date().format("YYMMdd").toString())
+}
+
+project.ext {
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.2'
+    minSdkVersion = 21
+    targetSdkVersion = 29
+
+    appApplicationId = 'com.example.stu.modularization'
+    appVersionName = '1.0.0'
+    appVersionCode = convertVersionCode() * 1000 + 5
+    }
