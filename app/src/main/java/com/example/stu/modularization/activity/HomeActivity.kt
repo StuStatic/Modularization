@@ -1,17 +1,13 @@
 package com.example.stu.modularization.activity
 
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.stu.http.client.CommonOkhttpClient
-import com.example.stu.imageloader.ImageLoader
 import com.example.stu.modularization.R
 import com.example.stu.modularization.fragment.HomeFragment
 import com.example.stu.modularization.fragment.MessageFragment
