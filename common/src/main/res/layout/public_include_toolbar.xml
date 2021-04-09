@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+    </data>
+    <LinearLayout
+        android:id="@+id/lintoolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/c_ffffff">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/public_AppBarTitleStyle" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View style="@style/public_GrayLineStyle" />
+    </LinearLayout>
+</layout>

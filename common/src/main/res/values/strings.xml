@@ -1,0 +1,32 @@
+<resources>
+    <string name="number">号:</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_success">登录成功</string>
+    <string name="network_not_good">网络不给力</string>
+    <string name="newline">\n</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="refresh">刷新</string>
+    <string name="net_error">请求失败，点击刷新重试</string>
+    <string name="we_chat">微信好友</string>
+    <string name="we_chat_circle">朋友圈</string>
+    <string name="we_chat_not_install">你还没有微信，请安装后重试</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancel">分享取消</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_to">分享到</string>
+    <string name="copy_success">复制成功</string>
+    <string name="public_network_invalid_tip">没有网络，请检查网络配置~</string>
+    <string name="how_to_class">如何上课</string>
+    <string name="share_howtoclass_title">轻松掌握小熊音乐上课技巧</string>
+    <string name="share_howtoclass_desc">小熊音乐，让音乐伴随成长</string>
+    <string name="share_mini_identify">长按识别~</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <!--是否按下，如一个按钮触摸或者点击。-->
+ <item android:state_pressed="true" android:drawable="@drawable/rectangle_so30dp_pink" />
+ <item android:state_pressed="false" android:state_focused="false"
+     android:drawable="@drawable/rectangle_st30dp_ffaa33" />
+
+ <!--是否取得焦点，比如用户选择了一个文本框。-->
+ <item android:state_focused="true" android:drawable="@drawable/rectangle_so30dp_pink" />
+ <item android:state_focused="false" android:drawable="@drawable/rectangle_st30dp_ffaa33" />
+ <!-- @drawable/@android:color/transparent    @color/btncolor-->
+</selector>
